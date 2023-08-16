@@ -15,17 +15,17 @@ def prepare_base(app_test):
     app_test.post(
         "/",
         data={
-            "text_to_translate": "Hello, I like videogame",
-            "translate_from": "en",
-            "translate_to": "pt",
+            "text-to-translate": "Hello, I like videogame",
+            "translate-from": "en",
+            "translate-to": "pt",
         },
     )
 
     app_test.post(
         "/",
         data={
-            "text_to_translate": "Do you love music?",
-            "translate_from": "en",
-            "translate_to": "pt",
+            "text-to-translate": "Do you love music?",
+            "translate-from": "en",
+            "translate-to": "pt",
         },
     )
