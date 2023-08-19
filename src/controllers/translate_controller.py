@@ -1,5 +1,4 @@
 from deep_translator import GoogleTranslator
-# from requests import request
 from flask import Blueprint, render_template, request
 # from deep_translator import GoogleTranslator
 from models.language_model import LanguageModel
