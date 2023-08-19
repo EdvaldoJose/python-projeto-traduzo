@@ -7,13 +7,13 @@ from flask import Blueprint, render_template
 translate_controller = Blueprint("translate_controller", __name__)
 
 
-# Reqs.4 e 5
+# Reqs. 4 e 5
 @translate_controller.route("/", methods=["GET", "POST"])
 def index():
     return render_template("index.html")
 
 
-# Req.6
+# Req. 6
 @translate_controller.route("/reverse", methods=["POST"])
 def reverse():
     raise NotImplementedError
