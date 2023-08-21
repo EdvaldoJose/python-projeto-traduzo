@@ -27,10 +27,12 @@
             <option value="{{ language.acronym }}">{{ language.name|upper }}</option>
             {% endif %}
 
+          
             <option value="{{ language.acronym }}" {% if language.acronym==translate_from %}selected{% endif %}>
             {{ language.name|upper }}
             </option>
             {% endfor %}
+
             </select>
           </li>
 
@@ -46,8 +48,9 @@
             {% else %}
             <option value="{{ language.acronym }}">{{ language.name|upper }}</option>
             {% endif %}
-            
-            <option value="{{ language.acronym }}" {% if language.acronym==language_to %}selected{% endif %}>
+
+           
+            <option value="{{ language.acronym }}" {% if language.acronym==translate_to %}selected{% endif %}>
             {{ language.name|upper }}
             </option>
             {% endfor %}

@@ -24,14 +24,14 @@ def index():
         source="auto", target=translate_to
     ).translate(text_to_translate)
     translated = translator_google or ""
-    
+
     history_dict = {
         "text_to_translate": text_to_translate,
         "translate_from": translate_from,
         "translate_to": translate_to,
     }
     HistoryModel(history_dict).save()
-    
+
     return render_template(
         "index.html",
         languages=languages,
