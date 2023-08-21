@@ -145,3 +145,5 @@ dmypy.json
 
 # vscode docker container
 .devcontainer
+index_copy_req4.html
+translate_controller_copy_req4.py
